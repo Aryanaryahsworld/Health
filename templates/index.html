@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css') }}" />
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="{{ url_for('static', filename='js/516d47c674.js') }}"
+      crossorigin="anonymous"
+    ></script>
+    <title>Healthical</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo"><img src="{{ url_for('static', filename='img/logo.png') }}" width="65" height="50"></a>
+
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#Prediction" class="nav__link">Prediction</a>
+            </li>
+            <li class="nav__item">
+              <a href="#FAQ" class="nav__link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            HEALTHICAL<br /><span class="home__title-color"></span
+            ><br />
+            <p class="slogan">Care for your health with a simple Self-Check</p>
+          </h1>
+
+          <a href="#Prediction" class="button">Get Start</a>
+        </div>
+
+        <div class="home__social"></div>
+
+        <div class="home__img">
+          <img src="{{ url_for('static', filename='img/diagnosis.png') }}" alt="" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <i class="fas fa-laptop-medical"></i>
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">About Us</h2>
+            <p class="about__text">
+              <br>
+              Are you concerned about your health? Get the accurate answers you need with our Disease Prediction website. With just a few clicks, you can determine if you are at risk for any of the multiple diseases we cover. Our AI-driven algorithms will provide you with quick and reliable results, so that you can confidently make decisions about your health. Don't wait - start predicting today!
+              <br><br>
+              Smart Disease Prediction is on a mission to make quality
+              healthcare affordable and accessible for over a billion+ Indians.
+              We believe in empowering our users with the most accurate,
+              comprehensive, and curated information and care, enabling them to
+              make better healthcare decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== PREDICTION =====-->
+      <section class="work section" id="Prediction">
+        <h2 class="section-title">Prediction</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <p>
+              <img src="{{ url_for('static', filename='img/Heart Disease.png') }}" alt="" />
+              <a href="/heart"
+                ><button
+                  style="height: 40px; width:100%;border:none"
+                  type="button"
+                  class="btn btn-dark link"
+                  
+                >
+                <p style="color:black">Check Now</p>
+                </button></a
+              >
+            </p>
+          </div>
+          <div class="work__img">
+            <img src="{{ url_for('static', filename='img/Diabetes.png') }}" alt="" />
+            <a href="/diabetes">
+              <button
+                style="height: 40px; width:100%;border:none"
+                type="button"
+                class="btn btn-dark link"
+              >
+              <p style="color:black">Check Now</p>
+              </button></a
+            >
+          </div>
+          <div class="work__img">
+            <img src="{{ url_for('static', filename='img/Liver.png') }}" alt="" />
+            <a href="/liver">
+              <button
+                style="height: 40px; width: 100%;border:none"
+                type="button"
+                class="btn btn-dark link"
+              >
+              <p style="color:black">Check Now</p>
+              </button></a
+            >
+          </div>
+          <div class="work__img">
+            <img src="{{ url_for('static', filename='img/Malaria Disease.png') }}" alt="" />
+            <a href="/malaria">
+              <button
+                style="height: 40px; width: 100%;border:none"
+                type="button"
+                class="btn btn-dark link"
+              >
+              <p style="color:black">Check Now</p>
+              </button></a
+            >
+          </div>
+          <div class="work__img">
+            <img src="{{ url_for('static', filename='img/cancer.png') }}" alt="" />
+            <a href="/cancer">
+              <button
+                style="height: 40px; width: 100%;border:none"
+                type="button"
+                class="btn btn-dark link"
+              >
+                <p style="color:black">Check Now</p>
+              </button ></a
+            >
+          </div>
+          <div class="work__img">
+            <img src="{{ url_for('static', filename='img/pneumonia2.png') }}" alt="" />
+            <a href="/pneumonia">
+              <button
+                style="height: 40px; width: 100%;border:none"
+                type="button"
+                class="btn btn-dark link"
+              >
+              <p style="color:black">Check Now</p>
+              </button></a
+            >
+          </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <ul class="package-list">
+          <!-- doctor -->
+          <li>
+            <div class="package-card">
+
+              <figure class="card-banner">
+                
+                <class="tab"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15085.110395882677!2d72.88698149870044!3d19.051528652086592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8bb4167aac5%3A0x9227427f755d9307!2sSai%20Clinic!5e0!3m2!1sen!2sin!4v1679761274157!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </figure></class>
+
+              <div class="card-content">
+                <!-- 1st -->
+                <h3 class="h3 card-title">Sai Clinic</h3>
+
+                <p class="card-text">
+                  Address: 3V4P+98W, Shiv Srishti Marg, Vatsalabai Naik Nagar, Kurla, Mumbai, Maharashtra 400071
+                </p>
+
+                <ul class="card-meta-list">
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+
+                      <!-- <p class="text">7D/6N</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+
+                      <!-- <p class="text">pax: 10</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+
+                      <!-- <p class="text">Malaysia</p> -->
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="card-price">
+
+                <div class="wrapper">
+
+                  <p class="reviews">(25 reviews)</p>
+
+                </div>
+
+                <p class="price">
+                  ₹300
+                </p>
+
+                <button class="btn btn-secondary">Book appointment</button>
+
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <div class="package-card">
+
+              <figure class="card-banner">
+                
+                <class="tab"> <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15085.1878189169!2d72.87200957906857!3d19.050677093637656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d19.0514787!2d72.8869927!4m5!1s0x3be7c8c9d2e41871%3A0x18b2a8b2435df969!2sK.J.%20Somaiya%20Hospital%20%26%20Research%20Center%2C%20Somaiya%20Ayurvihar%2C%20Eastern%20Express%20Hwy%2C%20Sion%20East%2C%20Sion%2C%20Mumbai%2C%20Maharashtra%20400022!3m2!1d19.0474671!2d72.8745646!5e0!3m2!1sen!2sin!4v1679789068522!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </figure></class>
+
+              <div class="card-content">
+                <!-- 2nd -->
+                <h3 class="h3 card-title">K.J. Somaiya Hospital & Research Center </h3>
+
+                <p class="card-text">
+                  Address: Somaiya Ayurvihar, Eastern Express Hwy, Sion East, Sion, Mumbai, Maharashtra 400022
+                </p>
+
+                <ul class="card-meta-list">
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+
+                      <!-- <p class="text">7D/6N</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+
+                      <!-- <p class="text">pax: 10</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+
+                      <!-- <p class="text">Malaysia</p> -->
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="card-price">
+
+                <div class="wrapper">
+
+                  <p class="reviews">(60 reviews)</p>
+
+                </div>
+
+                <p class="price">
+                  ₹800
+                </p>
+
+                <button class="btn btn-secondary">Book appointment</button>
+
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <div class="package-card">
+
+              <figure class="card-banner">
+                
+                <class="tab"> <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d120686.26691668447!2d72.79416074230541!3d19.04412559579134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7c8c9aaaaaaab%3A0x2ebce954e31a4e61!2sbus%20depot%2C%2013-14%2F33%20krishna%20bhavan%201st%20floor%20sion%20main%20road%2C%20next%20to%20sion%2C%20Sion%20West%2C%20Mumbai%2C%20Maharashtra%20400022!3m2!1d19.0441388!2d72.8642012!5e0!3m2!1sen!2sin!4v1679789212678!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </figure></class>
+
+              <div class="card-content">
+                <!-- 3rd -->
+                <h3 class="h3 card-title">Sion Polyclinic Hospital</h3>
+
+                <p class="card-text">
+                  Address: bus depot, 13-14/33 krishna bhavan 1st floor sion main road, next to sion, Sion West, Mumbai, Maharashtra 400022
+                </p>
+
+                <ul class="card-meta-list">
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+
+                      <!-- <p class="text">7D/6N</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+
+                      <!-- <p class="text">pax: 10</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+
+                      <!-- <p class="text">Malaysia</p> -->
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="card-price">
+
+                <div class="wrapper">
+
+                  <p class="reviews">(39 reviews)</p>
+
+                </div>
+
+                <p class="price">
+                  ₹700
+                </p>
+
+                <button class="btn btn-secondary">Book appointment</button>
+
+              </div>
+
+            </div>
+          </li>
+          <li>
+            <div class="package-card">
+
+              <figure class="card-banner">
+                
+                <class="tab"> <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d120689.46971249452!2d72.79429904223383!3d19.039720198382163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7c9639b563665%3A0xe0213ca23d90d680!2sSion%20East%2C%20Sion%2C%20Sion%20Koliwada%2C%20Maharashtra%20400022!3m2!1d19.0397334!2d72.8643395!5e0!3m2!1sen!2sin!4v1679789314222!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </figure></class>
+
+              <div class="card-content">
+                <!-- 4th -->
+                <h3 class="h3 card-title">Atharva Hospital</h3>
+
+                <p class="card-text">
+                  Address: Sion East, Sion, Sion Koliwada, Maharashtra 400022
+                </p>
+
+                <ul class="card-meta-list">
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+
+                      <!-- <p class="text">7D/6N</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+
+                      <!-- <p class="text">pax: 10</p> -->
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+
+                      <!-- <p class="text">Malaysia</p> -->
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="card-price">
+
+                <div class="wrapper">
+
+                  <p class="reviews">(22 reviews)</p>
+
+                </div>
+
+                <p class="price">
+                  ₹500
+                </p>
+
+                <button class="btn btn-secondary">Book appointment</button>
+
+              </div>
+
+            </div>
+          </li>
+
+      </section>
+      <!--===== FAQ =====-->
+      <section class="skills section" id="FAQ">
+        <h2 class="section-faq">FAQ</h2>
+
+        <!-- faq question -->
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What is Smart Disease Prediction
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                The "Smart Disease Prediction Using Deep Learning" system, based on predictive modelling, predicts the disease of patients/users on the basis of the information/ Data that the user provides as an input to the system
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              How to take a self-Check?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Click on the Check Now button & fill the require details. Click the Predict button. Find out your risk level with an in-depth report. Follow the advice for improving certain parts of your lifestyle and keep an eye out for the mentioned signs.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Is Smart Disease Prediction is Secure?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Definitely! Smart Disease Prediction Self-Checks are anonymous and reliable. None of your personal data is stored with us. The questions, answers, reports, advice, and signs are all verified by doctors. It’s free and secure for anyone to use.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Is it safe to use?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Yes
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== TEAM =====-->
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
